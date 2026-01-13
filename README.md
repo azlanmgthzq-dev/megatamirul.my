@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Megat Amirul – Portfolio
 
-## Getting Started
+Personal portfolio built with **Next.js 15**, focused on **mission‑critical frontend interfaces**, clean UI, and smooth micro‑interactions.
 
-First, run the development server:
+### Features
+
+- **Welcome screen**: Animated intro with typewriter and motion effects to set the tone of the site.
+- **Hero section**: 3D avatar, mission‑critical headline, and typewriter subtitle.
+- **About section**: Tabbed layout for background, education, certifications, and technologies.
+- **Experience section**: Timeline-style experience panels driven from a config file.
+- **Contact section**: Simple call‑to‑action to reach out for opportunities.
+- **Animated background**: Soft blobs and grid texture behind all sections.
+
+### Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS + custom utility classes (`noise`, `glass`, gradients)
+- **Animation**: Framer Motion
+- **Icons**: Lucide, custom SVG tech icons
+
+### Getting Started
+
+1. **Install dependencies**
+
+```bash
+npm install
+```
+
+2. **Run the development server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open the app**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit `http://localhost:3000` in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Project Structure (high level)
 
-## Learn More
+- `app/` – layout, global styles, and main page composition.
+- `components/hero/` – hero layout, avatar, and headline.
+- `components/about/` – tabbed About section and certification modal.
+- `components/experience/` – experience config and tabs.
+- `components/contact/` – contact/CTA section.
+- `components/navigation/` – top navigation bar and visibility shell.
+- `components/background/` – animated background blobs and section backdrop.
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The app is optimized for deployment on platforms like **Vercel**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can then connect this repository to Vercel and deploy directly from your main branch.
