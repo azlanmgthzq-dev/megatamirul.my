@@ -133,7 +133,7 @@ export default function AboutSection() {
                       <div className="space-y-6">
                         <div className="p-5 rounded-xl bg-secondary/30 border border-border/50">
                           <div className="flex items-start justify-between gap-4 mb-2">
-                            <h4 className="font-medium text-foreground">Bachelor Of Computer Science (Intelligence Systems)</h4>
+                            <h4 className="font-medium text-foreground">Bachelor Of Computer Science (Intelligence Systems)j</h4>
                             <span className="text-sm font-mono text-primary whitespace-nowrap">2021 - 2024</span>
                           </div>
                           <p className="text-muted-foreground text-sm mb-3">National Defence University of Malaysia - Kuala Lumpur, Malaysia</p>
