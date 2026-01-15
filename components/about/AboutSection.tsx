@@ -165,7 +165,7 @@ export default function AboutSection() {
                       <div className="grid md:grid-cols-2 gap-6">
                         {[
                           {
-                            title: "Safe Management System Training",
+                            title: "Safety Management System Training",
                             issuer: "Global Turbine Asia",
                             year: "2025",
                             description:
