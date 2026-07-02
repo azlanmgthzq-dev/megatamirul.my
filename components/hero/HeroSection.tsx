@@ -52,7 +52,7 @@ export default function HeroSection() {
 
             <TypewriterText
               delay={0.8}
-              text="Frontend developer passionate about building robust, scalable interfaces that support real business and operational needs."
+              text="Full-stack developer passionate about building robust, scalable interfaces and systems that support real business and operational needs."
               />
 
           </motion.div>

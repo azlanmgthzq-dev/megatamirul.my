@@ -12,7 +12,7 @@ export default function HeroText({ side }: HeroTextProps) {
       <div className="hidden lg:block text-right space-y-4">
         <div className="inline-flex items-center justify-end gap-2 text-muted-foreground text-sm">
           <Cpu className="w-4 h-4 text-primary" />
-          <span>Frontend Developer</span>
+          <span>Full-Stack Developer</span>
         </div>
 
         <p className="text-foreground/80 text-lg leading-relaxed">

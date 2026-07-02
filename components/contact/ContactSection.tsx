@@ -6,7 +6,7 @@ import { Download, Mail } from "lucide-react";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 
 const EMAIL = "azlan.mgthzq@gmail.com";
-const RESUME_PATH = "/MegatAmirul_Resume_25.pdf";
+const RESUME_PATH = "/Resume_Megat_June26.pdf";
 
 const blockVariants: Variants = {
   hidden: { opacity: 0, y: 26, filter: "blur(6px)" },

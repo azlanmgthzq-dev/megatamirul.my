@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "@/components/hero/HeroSection";
 import AboutSection from "@/components/about/AboutSection";
 import ExperienceSection from "@/components/experience/ExperienceSection";
+import ProjectsSection from "@/components/projects/ProjectsSection";
 import ContactSection from "@/components/contact/ContactSection";
 import WelcomeScreen from "@/components/welcome/WelcomeScreen";
 import AnimatedBackground from "@/components/background/AnimatedBackground";
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ExperienceSection/>
+      <ProjectsSection />
       <ContactSection />
     </>
     

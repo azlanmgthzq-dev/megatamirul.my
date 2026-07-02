@@ -73,7 +73,7 @@ export default function AboutSection() {
                     <div className="space-y-8">
                       <div className="space-y-4">
                         <p className="text-foreground/80 leading-relaxed">
-                          Frontend developer and UI/UX designer with hands-on experience building interfaces for aviation software systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
+                          Full-stack developer and UI/UX designer with hands-on experience building interfaces for aviation software systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
                         </p>
                         <p className="text-foreground/80 leading-relaxed">
                           My work includes asset tracking systems (RFID), task card digitalization, fleet management dashboards, and engine health monitoring interfaces. I understand the constraints of aviation software: strict compliance requirements, zero tolerance for ambiguity, and users who need information fast.
@@ -196,6 +196,22 @@ export default function AboutSection() {
                                 "Certified that has beed recognized as a Leaders Of Character.",
                               image: "/certificates/LEADERSHIPCERT.jpeg",
                             },
+                          {
+                            title: "Microsoft Azure Fundamentals AZ-900 Exam Prep",
+                            issuer: "Coursera (Microsoft)",
+                            year: "2026",
+                            description:
+                              "Specialization covering Azure essentials, secure & scalable cloud infrastructure, and infrastructure management (4 courses).",
+                            image: "/certificates/Microsoft Azure Fundamentals-1.png",
+                          },
+                          {
+                            title: "Information Protection and Data Security (Azure)",
+                            issuer: "HRD Corp e-LATiH — Ministry of Human Resources Malaysia",
+                            year: "2026",
+                            description:
+                              "Certificate of Completion for Azure information protection and data security fundamentals.",
+                            image: "/certificates/azure security-1.png",
+                          },
                         ].map((cert, index) => (
                           <div
                             key={index}

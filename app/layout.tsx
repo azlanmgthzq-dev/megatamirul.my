@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Megat Amirul | Frontend Developer",
+  title: "Megat Amirul | Full-Stack Developer",
   description:
-    "Frontend developer specializing in aviation software systems and UI/UX design.",
+    "Full-stack developer specializing in aviation software systems and UI/UX design.",
 };
 
 export default function RootLayout({

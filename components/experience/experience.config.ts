@@ -21,7 +21,7 @@ export const experienceTabs: ReadonlyArray<ExperienceTab> = [
     id: "gta",
     label: "2025 - Present",
     company: "Global Turbine Asia (Safran JV)",
-    role: "Frontend Developer & UI/UX Designer",
+    role: "Full-Stack Developer & UI/UX Designer",
     summary:
       "Involved in the design and development of aviation maintenance systems within a regulated MRO environment.",
     projects: [
@@ -48,6 +48,29 @@ export const experienceTabs: ReadonlyArray<ExperienceTab> = [
           "Supported documentation and stakeholder coordination",
         ],
         tags: ["System Design", "Compliance", "Scalability", "Documentation"],
+      },
+      {
+        name: "ICP Dashboard",
+        description:
+          "Full-stack internal dashboard replacing manual Excel tracking for Industrial Collaboration Programme (ICP) obligations, milestones, and BIP claims.",
+        contributions: [
+          "Built the application end-to-end with React, Vite, and Supabase (PostgreSQL + Auth)",
+          "Implemented role-based access control with per-user, per-module edit permissions across 8 team members",
+          "Developed BIP Claim Summary, Calendar & Timeline, Kanban Tasks, and dynamic Org Chart modules",
+          "Migrated legacy urgent-items tracking into a unified task management system",
+        ],
+        tags: ["React", "Vite", "Supabase", "Zustand", "Recharts"],
+      },
+      {
+        name: "GTA Contract Management Portal (CMP)",
+        description:
+          "Contract registry and KPI dashboard digitalizing procurement flow and document management for GTA.",
+        contributions: [
+          "Built contract CRUD, KPI cards, and charts covering the full contract lifecycle",
+          "Implemented a two-tier access system: authenticated admin view and configurable public read-only view",
+          "Developed the Document Rack and Procurement Flow modules",
+        ],
+        tags: ["React", "Supabase", "Zustand", "Recharts"],
       },
     ],
   },
