@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
 
         <span className="text-sm text-muted-foreground">
-          Last Updated January 2026
+          Last Updated July 2026
         </span>
       </div>
     </footer>
