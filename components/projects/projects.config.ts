@@ -61,9 +61,11 @@ export const projects: Project[] = [
     role: "Project Oversight",
     description:
       "Engine & component condition monitoring system supporting maintenance planning and compliance oversight across 8 functional modules.",
-    images: ["/Project Snapshot/Eccm/Eccm1.png",
-      "/Project Snapshot/Eccm/Eccm2.png",
-      "/Project Snapshot/Eccm/Eccm3.png",],
+    images: [
+      "/Project Snapshot/ECCM/Eccm1.png",
+      "/Project Snapshot/ECCM/Eccm2.png",
+      "/Project Snapshot/ECCM/Eccm3.png",
+    ],
     link: "URL:https://safetruck-staging.ddns.net/eccm/login",
     linkLabel: "Internal Tool — Private",
     tags: ["System Design", "Compliance", "Scalability"],
