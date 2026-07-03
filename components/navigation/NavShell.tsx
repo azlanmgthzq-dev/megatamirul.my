@@ -1,25 +1,35 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+import { usePathname } from "next/navigation";
 import Navigation from "./Navigation";
+
+function subscribeWelcomeComplete(callback: () => void) {
+  window.addEventListener("welcome-complete", callback);
+  return () => window.removeEventListener("welcome-complete", callback);
+}
+
+function getWelcomeCompleteSnapshot() {
+  return window.sessionStorage.getItem("welcome-complete") === "true";
+}
+
+function getServerWelcomeCompleteSnapshot() {
+  return false;
+}
 
 /**
  * Controls when the top navigation is shown.
- * By default it hides during the welcome screen and fades in once the welcome completes.
+ * On the home page it hides during the welcome screen and fades in once the welcome completes.
+ * On any other route there's no welcome screen to wait for, so it shows immediately.
  */
 export default function NavShell() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    // Wait for the welcome screen to finish, then reveal the nav.
-    const handleComplete = () => {
-      window.sessionStorage.setItem("welcome-complete", "true");
-      setVisible(true);
-    };
-
-    window.addEventListener("welcome-complete", handleComplete);
-    return () => window.removeEventListener("welcome-complete", handleComplete);
-  }, []);
+  const pathname = usePathname();
+  const welcomeComplete = useSyncExternalStore(
+    subscribeWelcomeComplete,
+    getWelcomeCompleteSnapshot,
+    getServerWelcomeCompleteSnapshot
+  );
+  const visible = pathname !== "/" || welcomeComplete;
 
   // Hide the nav entirely while the welcome screen is showing so it doesn't flash underneath
   if (!visible) return null;

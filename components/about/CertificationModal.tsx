@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { useIsClient } from "@/hooks/useIsClient";
 
 type CertificateModalProps = {
   open: boolean;
@@ -15,6 +17,8 @@ export default function CertificateModal({
   imageSrc,
   onClose,
 }: CertificateModalProps) {
+  const mounted = useIsClient();
+
   // Close modal on ESC key press
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -35,7 +39,9 @@ export default function CertificateModal({
     };
   }, [open, onClose]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div
@@ -71,6 +77,7 @@ export default function CertificateModal({
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }

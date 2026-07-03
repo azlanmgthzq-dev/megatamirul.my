@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, } from "next/font/google";
+import { Geist, Geist_Mono, Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import NavShell from "@/components/navigation/NavShell";
 import Footer from "@/components/footer/Footer";
@@ -14,11 +14,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const fragmentMono = Fragment_Mono({
+  variable: "--font-fragment-mono",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+});
+
 
 export const metadata: Metadata = {
   title: "Megat Amirul | Full-Stack Developer",
   description:
-    "Full-stack developer specializing in aviation software systems and UI/UX design.",
+    "Full-stack software engineer specializing in building reliable, scalable systems and thoughtful UI/UX design.",
 };
 
 export default function RootLayout({
@@ -28,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${fragmentMono.variable} antialiased`}>
         {/* Global Navigation */}
         <NavShell />
 

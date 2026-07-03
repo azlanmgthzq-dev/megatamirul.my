@@ -17,9 +17,9 @@ export const projects: Project[] = [
     description:
       "Internal web application replacing manual Excel tracking for Industrial Collaboration Programme (ICP) obligations - covering milestones, BIP claims, vendor data, role-based access, and team collaboration tools.",
     images: [
-      "/Project SnapShot/ICP/Overview.png",
-      "/Project SnapShot/ICP/claim_Ai.png",
-      "/Project SnapShot/ICP/contract_details.png",
+      "/Project Snapshot/ICP Dashboard/icp1.png",
+      "/Project Snapshot/ICP Dashboard/icp2.png",
+      "/Project Snapshot/ICP Dashboard/icp3.png",
     ],
     link: "https://icp-dashboard-eta.vercel.app/",
     linkLabel: "View Live Demo",
@@ -32,9 +32,9 @@ export const projects: Project[] = [
     description:
       "Contract registry and KPI dashboard digitalizing procurement flow, document management, and contract tracking for Global Turbine Asia.",
     images: [
-      "/Project SnapShot/CMP/CMP_landing.png",
-      "/Project SnapShot/CMP/Main_dash.png",
-      "/Project SnapShot/CMP/ProcurementFlow.png",
+      "/Project Snapshot/GTA Cmp/cmp1.png",
+      "/Project Snapshot/GTA Cmp/cmp2.png",
+      "/Project Snapshot/GTA Cmp/cmp3.png",
     ],
     link: "https://cmp-dashboard-gilt.vercel.app/",
     linkLabel: "View Live Demo",
@@ -47,9 +47,9 @@ export const projects: Project[] = [
     description:
       "Helicopter MRO operations digitalization system focused on RFID-based asset tracking, task card digitalization, and workforce planning.",
     images: [
-      "/Project SnapShot/Helios/Asset_mgmt.png",
-      "/Project SnapShot/Helios/Helios_login.png",
-      "/Project SnapShot/Helios/TaskCard.png",
+      "/Project Snapshot/Helios/helios1.png",
+      "/Project Snapshot/Helios/helios2.png",
+      "/Project Snapshot/Helios/helios3.png",
     ],
     link: "https://helios-gta-ewjszpyrwgao6.azurewebsites.net/",
     linkLabel: "View Live Demo",

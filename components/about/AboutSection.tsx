@@ -73,10 +73,10 @@ export default function AboutSection() {
                     <div className="space-y-8">
                       <div className="space-y-4">
                         <p className="text-foreground/80 leading-relaxed">
-                          Full-stack developer and UI/UX designer with hands-on experience building interfaces for aviation software systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
+                          Full-stack developer and UI/UX designer with hands-on experience building interfaces for complex, regulated systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
                         </p>
                         <p className="text-foreground/80 leading-relaxed">
-                          My work includes asset tracking systems (RFID), task card digitalization, fleet management dashboards, and engine health monitoring interfaces. I understand the constraints of aviation software: strict compliance requirements, zero tolerance for ambiguity, and users who need information fast.
+                          My work spans internal dashboards, compliance tracking systems, asset/task management tools, and monitoring interfaces — most of it within a highly regulated aerospace &amp; defence environment. That background shaped how I build: strict attention to compliance requirements, zero tolerance for ambiguity, and interfaces that surface the right information fast.
                         </p>
                       </div>
 

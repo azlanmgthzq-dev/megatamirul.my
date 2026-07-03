@@ -26,6 +26,7 @@
 
   --font-sans: system-ui, sans-serif;
   --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-accent: var(--font-fragment-mono), monospace;
 }
 
 /* -------------------------------
