@@ -66,7 +66,7 @@ export const projects: Project[] = [
       "/Project Snapshot/ECCM/Eccm2.png",
       "/Project Snapshot/ECCM/Eccm3.png",
     ],
-    link: "URL:https://safetruck-staging.ddns.net/eccm/login",
+    link: "https://safetruck-staging.ddns.net/eccm/login",
     linkLabel: "Internal Tool — Private",
     tags: ["System Design", "Compliance", "Scalability"],
   },
