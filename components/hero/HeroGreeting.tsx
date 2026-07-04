@@ -11,16 +11,15 @@ const traits = [
 
 export default function HeroGreeting() {
   return (
-    <div className="space-y-6 text-center lg:text-left">
+    <div className="space-y-6 text-center lg:text-left ">
       <div>
-        <p className="font-[family-name:var(--font-accent)] italic font-light text-4xl md:text-5xl tracking-wide">
-          Hello, I'm Megat.
-Full-Stack Developer
-        </p>
+        <h1 className="font-[family-name:var(--font-accent)] italic bold text-4xl md:text-5xl tracking-wide">
+          Hello, Welcome to my portfolio!
+        </h1>
         
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 justify-items-center lg:justify-items-start">
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 justify-items-center lg:justify-items-start">
         {traits.map(({ icon: Icon, label, color }) => (
           <div
             key={label}

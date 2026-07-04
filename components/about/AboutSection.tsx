@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Layers } from "lucide-react";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
@@ -70,49 +71,67 @@ export default function AboutSection() {
               switch (tab) {
                 case "background":
                   return (
-                    <div className="space-y-8">
-                      <div className="space-y-4">
-                        <p className="text-foreground/80 leading-relaxed">
-                          Full-stack developer and UI/UX designer with hands-on experience building interfaces for complex, regulated systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
-                        </p>
-                        <p className="text-foreground/80 leading-relaxed">
-                          My work spans internal dashboards, compliance tracking systems, asset/task management tools, and monitoring interfaces — most of it within a highly regulated aerospace &amp; defence environment. That background shaped how I build: strict attention to compliance requirements, zero tolerance for ambiguity, and interfaces that surface the right information fast.
-                        </p>
+                    <div className="grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
+                      <div className="space-y-8 order-2 md:order-1">
+                        <div className="space-y-4">
+                          <p className="text-foreground/80 leading-relaxed">
+                            Full-stack developer and UI/UX designer with hands-on experience building interfaces for complex, regulated systems. I&apos;ve worked across the full development lifecycle - from understanding requirements to shipping production-ready code.
+                          </p>
+                          <p className="text-foreground/80 leading-relaxed">
+                            My work spans internal dashboards, compliance tracking systems, asset/task management tools, and monitoring interfaces — most of it within a highly regulated aerospace &amp; defence environment. That background shaped how I build: strict attention to compliance requirements, zero tolerance for ambiguity, and interfaces that surface the right information fast.
+                          </p>
+                        </div>
+
+                        <div className="space-y-4">
+                          <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-2">
+                            <Layers className="w-5 h-5 text-primary" />
+                            System Thinking
+                          </h3>
+                          <ul className="space-y-3">
+                            {[
+                              "Web performance optimization (static vs dynamic rendering)",
+                              "Maintainability through clean, documented code",
+                              "Scalable UI architecture and component design",
+                              "Security fundamentals in frontend contexts",
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start gap-3 text-foreground/80">
+                                <ArrowRight className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className="space-y-4">
+                          <h3 className="font-display text-xl font-semibold text-foreground">
+                            How I Work
+                          </h3>
+                          <div className="flex flex-wrap gap-3">
+                            {["Curious", "Detail-oriented", "Collaborative", "Systematic", "Adaptable"].map((trait) => (
+                              <span
+                                key={trait}
+                                className="px-4 py-2 rounded-lg bg-muted text-foreground text-sm font-medium"
+                              >
+                                {trait}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       </div>
 
-                      <div className="space-y-4">
-                        <h3 className="font-display text-xl font-semibold text-foreground flex items-center gap-2">
-                          <Layers className="w-5 h-5 text-primary" />
-                          System Thinking
-                        </h3>
-                        <ul className="space-y-3">
-                          {[
-                            "Web performance optimization (static vs dynamic rendering)",
-                            "Maintainability through clean, documented code",
-                            "Scalable UI architecture and component design",
-                            "Security fundamentals in frontend contexts",
-                          ].map((item, index) => (
-                            <li key={index} className="flex items-start gap-3 text-foreground/80">
-                              <ArrowRight className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-
-                      <div className="space-y-4">
-                        <h3 className="font-display text-xl font-semibold text-foreground">
-                          How I Work
-                        </h3>
-                        <div className="flex flex-wrap gap-3">
-                          {["Curious", "Detail-oriented", "Collaborative", "Systematic", "Adaptable"].map((trait) => (
-                            <span
-                              key={trait}
-                              className="px-4 py-2 rounded-lg bg-muted text-foreground text-sm font-medium"
-                            >
-                              {trait}
-                            </span>
-                          ))}
+                      <div className="relative order-1 md:order-2 w-full max-w-xs mx-auto md:max-w-none md:mx-0">
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 translate-x-2 translate-y-2 border border-primary/40 rounded-lg"
+                        />
+                        <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
+                          <Image
+                            src="/MyPicture/MyPic3.png"
+                            alt="Megat Amirul Haziq"
+                            fill
+                            sizes="(max-width: 768px) 320px, 360px"
+                            className="object-cover rounded-lg"
+                          />
                         </div>
                       </div>
                     </div>

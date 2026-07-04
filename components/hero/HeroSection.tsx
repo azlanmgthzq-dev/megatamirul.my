@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import HeroPhotoCarousel from "./HeroPhotoCarousel";
+import HeroIllustration from "./HeroIllustration";
 import HeroGreeting from "./HeroGreeting";
 
 export default function HeroSection() {
@@ -29,7 +29,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div variants={{ hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0 } }}>
-              <HeroPhotoCarousel />
+              <HeroIllustration />
             </motion.div>
           </div>
 
