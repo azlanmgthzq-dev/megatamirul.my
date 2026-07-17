@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const hasLink = project.link.length > 0;
 
   return (
-    <div className="glass rounded-xl p-6 hover:border-primary/40 transition space-y-4">
+    <div className="glass glow-border rounded-xl p-6 hover:border-primary/40 transition space-y-4">
       <ProjectCarousel images={project.images} alt={project.name} />
 
       <div className="space-y-3">

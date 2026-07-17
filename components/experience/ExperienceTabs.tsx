@@ -49,7 +49,7 @@ export default function ExperienceTabs({
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className="glass rounded-2xl p-8 space-y-6"
+        className="glass glow-border rounded-2xl p-8 space-y-6"
       >
         {renderContent(activeTab)}
       </motion.div>

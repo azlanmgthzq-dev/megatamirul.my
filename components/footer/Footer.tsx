@@ -4,7 +4,7 @@ import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-background/80 backdrop-blur">
+    <footer className="border-t border-border/60 bg-background/80 backdrop-blur glow-border">
       <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
         <span className="text-sm text-foreground font-medium">
           Built by Megat Amirul

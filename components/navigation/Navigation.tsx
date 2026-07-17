@@ -68,7 +68,7 @@ export default function Navigation() {
   }, [isHome]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-background/70 border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-background/70 border-b border-border glow-border">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"

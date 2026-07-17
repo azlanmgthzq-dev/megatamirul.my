@@ -41,7 +41,7 @@ export default function EngineeringTabs() {
         initial={{ opacity: 0, x: 12 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
-        className="glass rounded-2xl p-8 min-h-[380px] space-y-6"
+        className="glass glow-border rounded-2xl p-8 min-h-[380px] space-y-6"
       >
         <div className="space-y-3">
           <h3 className="font-display text-xl font-semibold text-foreground">

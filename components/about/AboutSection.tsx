@@ -234,7 +234,7 @@ export default function AboutSection() {
                         ].map((cert, index) => (
                           <div
                             key={index}
-                            className="glass rounded-xl p-6 hover:border-primary/40 transition"
+                            className="glass glow-border rounded-xl p-6 hover:border-primary/40 transition"
                           >
                             <div className="flex items-start justify-between mb-3">
                               <h3 className="font-semibold text-foreground">

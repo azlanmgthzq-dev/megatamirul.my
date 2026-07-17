@@ -11,7 +11,7 @@ const traits = [
 
 export default function HeroGreeting() {
   return (
-    <div className="glass rounded-2xl p-6 md:p-8 space-y-6 text-center lg:text-left">
+    <div className="glass glow-border rounded-2xl p-6 md:p-8 space-y-6 text-center lg:text-left">
       <div>
         <h1 className="font-display text-4xl md:text-5xl tracking-wide">
           Hello, Welcome to my portfolio!

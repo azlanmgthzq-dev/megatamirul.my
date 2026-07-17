@@ -48,7 +48,7 @@ export default function AboutTabs({ renderContent, onTabChange }: Props) {
           initial={{ opacity: 0, x: 12 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
-          className="glass rounded-2xl p-8 min-h-[380px]"
+          className="glass glow-border rounded-2xl p-8 min-h-[380px]"
         >
           {renderContent(activeTab)}
         </motion.div>
