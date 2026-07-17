@@ -11,19 +11,19 @@ const traits = [
 
 export default function HeroGreeting() {
   return (
-    <div className="space-y-6 text-center lg:text-left ">
+    <div className="glass rounded-2xl p-6 md:p-8 space-y-6 text-center lg:text-left">
       <div>
-        <h1 className="font-[family-name:var(--font-accent)] italic bold text-4xl md:text-5xl tracking-wide">
+        <h1 className="font-display text-4xl md:text-5xl tracking-wide">
           Hello, Welcome to my portfolio!
         </h1>
-        
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 justify-items-center lg:justify-items-start">
-        {traits.map(({ icon: Icon, label, color }) => (
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-3">
+        {traits.map(({ icon: Icon, label, color }, index) => (
           <div
             key={label}
-            className="inline-flex items-center gap-2 text-muted-foreground text-sm"
+            className="glass glow-border rounded-2xl p-4 md:p-6 border border-white/10 flex items-center gap-2 text-muted-foreground text-sm"
+            style={{ animationDelay: `${index * 0.3}s` }}
           >
             <Icon className={`w-4 h-4 flex-shrink-0 ${color}`} />
             <span>{label}</span>
